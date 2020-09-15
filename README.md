@@ -2,23 +2,23 @@
 
 ## Project setup
 ```
-npm install
+npm i -S vue-screen-number
 ```
 
-### Compiles and hot-reloads for development
+### include
 ```
-npm run serve
+import screenNumber from "./components/";
+Vue.use(screenNumber)
 ```
-
-### Compiles and minifies for production
+### use
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+<screenNumber value="20200915" />
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### props
+```
+value:需要显示的值
+speed:滚动速度，值为CSS3标准值，默认2s
+itemClass:自定义每一个数字块的样式，如果样式跟内部定义的样式冲突，可使用 important
+childClass:自定义块中滚动的数组内容样式，如果样式跟内部定义的样式冲突，可使用 important
+```

@@ -7,7 +7,7 @@ npm i -S vue-screen-number
 
 ### include
 ```
-import screenNumber from "./components/";
+import screenNumber from "vue-screen-number";
 Vue.use(screenNumber)
 ```
 ### use
